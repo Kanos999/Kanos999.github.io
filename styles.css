@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Glitchy';
+    src:  url('RandyGGRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Glitchy2';
+    src:  url('Consolas.ttf');
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /*background-color: #212121;*/
+    background-color: #3e3c41;/*#F5F5F5*/;
+    font-family: 'Glitchy';
+    overflow-x: hidden;
+}
+
+.hanger {
+    background-color: #535EEB;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    left: 4em;
+    width: 12rem;
+    min-height: 10rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    box-shadow: 0 0 20px #535EEB;
+    z-index: 6;
+}
+
+.hanger-button {
+    background-color: transparent;
+    transition: all 0.2s;
+    padding: 0.8rem;
+    width: 8rem;
+    margin-left: 1.2rem;
+    margin-top: 0.8rem;
+    top: auto;
+}
+
+.hanger-button:hover {
+    background-color: #BDBDFD;
+    cursor: pointer;
+    width: 12em;
+    box-shadow: 0 0 20px #BDBDFD;
+}
+
+.active-hander-button {
+    font-weight: bolder;
+}
+
+
+.header {
+    width: 100%;
+    position: fixed!important;
+    top: 0;
+    min-height: 68px;
+    color: #EEE;
+    z-index: 5;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5), rgba(0,0,0,0));
+    float: right;
+}
+
+.header>span {
+    float: right;
+    font-size: 18pt;
+    margin: 12px 30px 12px 12px;
+}
+
+
+
+.main {
+    background-color: transparent/*#212126*/;
+    position: absolute;
+    left: 20rem;
+    top: 10%;
+    width: calc(90% - 20rem);
+    min-width: 20rem!important;
+    height: auto;
+    min-height: 240px;
+    /*box-shadow: 0 0 40px #090609;*/
+    color: #fff;
+    padding: 80px;
+    font-weight: bolder;
+    font-size: 58pt;
+    z-index: 4;
+}
+
+#title {
+    /*writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: absolute;
+    left: -26pt;
+    top: 42px;
+    color: white;
+    font-weight: bolder;
+    font-size: 38pt;
+    z-index: 3;
+    text-shadow: 0 0 10px #777;*/
+    position: absolute;
+    top: -38pt;
+    color: white;
+    font-weight: bolder;
+    font-size: 38pt;
+    z-index: 3;
+    text-shadow: 0 0 10px #777;
+}
+
+highlight {
+    color: #aabbff;
+    font-family: "Glitchy";
+    text-shadow: 0 0 4px #aabbff;
+}
+
+highlight:hover {
+    font-family: "Glitchy2";
+    font-size: 58pt;
+}
+
+
+.subtitle {
+    margin-top: -40px;
+    margin-bottom: -40px;
+    font-size: 28pt;
+}
+
+main {
+    top: 0;
+    position: fixed;
+    box-shadow: inset 0 0 20px #DDD;
+    min-height: 300px!important;
+}
+
+.segment2 {
+    background-color: #ccc;
+    border-top: solid 12px white;
+    z-index: 4;
+    width: 100%!important;
+    position: absolute;
+    height: 100%;
+    font-size: 38pt;
+    font-weight: bold;
+}
+
+
+.segment {
+    width: auto;
+    position: relative;
+    top: 0!important;
+    right: 0;
+    margin: 8rem 8rem 12rem 24rem;
+    height: auto;
+    min-height: 240px;
+    font-weight: bolder;
+    font-size: 58pt;
+    z-index: 4;
+    display: flex;
+    transition: all 0.2s;
+}
+
+.segmentLeft {
+    height: auto;
+    width: 40%;
+    color: #000;
+    font-weight: bolder;
+    font-size: 58pt;
+    z-index: 5;
+    transition: all 0.2s;
+}
+
+
+.segment:hover .projectImg {
+    transition: all 0.2s;
+    box-shadow: 0 0 20px #aaa;
+}
+
+.projectImg {
+    transition: all 0.4s;
+}
+
+
+.imgOverlay {
+    background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0), rgba(0,0,0,0));
+    width: 40%;
+    height: 100%;
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s;
+}
+
+.leftPadding {
+    margin-left: 380px;
+}
+
+.segmentRight {
+    background-color: rgba(33, 33, 38, 0.6);
+    box-shadow: 0 0 40px #090609;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    height: 100%;
+    right: 0;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 14pt;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    padding: 5rem 5rem 5rem calc(10% + 5rem);
+    z-index: 3;
+    line-height: 1.8;
+}
