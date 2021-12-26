@@ -65,10 +65,16 @@ body {
     float: right;
 }
 
-.header>span {
+.header>a {
     float: right;
     font-size: 18pt;
     margin: 12px 30px 12px 12px;
+    color: #eee!important;
+    text-decoration: none;
+}
+
+.header>a:visited {
+    color: #EEE!important;
 }
 
 
@@ -102,12 +108,13 @@ body {
     z-index: 3;
     text-shadow: 0 0 10px #777;*/
     position: absolute;
-    top: -38pt;
+    top: -24pt;
     color: white;
     font-weight: bolder;
     font-size: 38pt;
     z-index: 3;
     text-shadow: 0 0 10px #777;
+    line-height: 1;
 }
 
 highlight {
@@ -152,9 +159,8 @@ main {
     position: relative;
     top: 0!important;
     right: 0;
-    margin: 8rem 8rem 12rem 24rem;
-    height: auto;
-    min-height: 240px;
+    margin: 8rem 8rem 18rem 24rem;
+    height: auto!important;
     font-weight: bolder;
     font-size: 58pt;
     z-index: 4;
@@ -186,7 +192,7 @@ main {
 .imgOverlay {
     background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0), rgba(0,0,0,0));
     width: 40%;
-    height: 100%;
+    height: auto;
     z-index: 6;
     position: absolute;
     top: 0;
@@ -203,7 +209,8 @@ main {
     position: absolute;
     left: 30%;
     top: 20%;
-    height: 100%;
+    height: auto!important;
+    min-height: 100%;
     right: 0;
     color: #fff;
     font-weight: bolder;
