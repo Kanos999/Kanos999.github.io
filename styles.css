@@ -181,11 +181,12 @@ main {
 
 .segment:hover .projectImg {
     transition: all 0.2s;
-    box-shadow: 0 0 20px #aaa;
+    box-shadow: 0 0 20px #666;
 }
 
 .projectImg {
     transition: all 0.4s;
+    box-shadow: 0 0 20px #111;
 }
 
 
