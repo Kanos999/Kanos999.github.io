@@ -53,6 +53,24 @@ body {
     font-weight: bolder;
 }
 
+.button {
+    background-color: #BDBDFD;
+    cursor: pointer;
+    width: 12em;
+    box-shadow: 0 0 20px #BDBDFD;
+    padding: 0.8rem;
+    width: 8rem;
+    margin-left: 1.2rem;
+    margin-top: 0.8rem;
+    top: auto;
+    outline: none!important;
+    border: none!important;
+}
+
+form {
+    font-size: 18pt;
+}
+
 
 .header {
     width: 100%;
