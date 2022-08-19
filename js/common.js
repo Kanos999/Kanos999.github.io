@@ -52,9 +52,11 @@ function generateBackground() {
 }
 
 function updateBackground(bars) {
-	background(20);
+	background(16, 25, 45);
 	bars.forEach(bar => {
-		let c = color(noise(bar.color)*25 + 10);
+		let a = noise(bar.color);
+		//52, 152, 219
+		let c = color(14*a+12, 21*a+18, 39*a+33);
 		fill(c);
 		noStroke();
 		rect(
