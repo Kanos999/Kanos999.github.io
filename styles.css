@@ -50,7 +50,9 @@
 .hanger-button {
     transition: all 0.3s;
     background-color: #e0e0e0;
+    box-shadow: rgba(189, 197, 209, 0.3) 0px 8px 19.2px 0px;
     color: #333;
+    outline: 1px solid #669;
     padding: 0.8rem;
     width: 8rem;
     margin: 0.8rem 1.2rem 0 1.2rem;
@@ -63,9 +65,12 @@
 .hanger-button:hover {
     background-color: #fff!important;
     cursor: pointer;
-    box-shadow: rgba(189, 197, 209, 0.2) 0px 8px 19.2px 2px;
 }
-  
+ 
+.hanger-button:hover .projectsBody {
+    margin-left: 20rem!important;
+}
+
 .navigationContainer:hover .dropdown-content {
     opacity: 1!important;
     transition: all 0.3s;
@@ -196,12 +201,11 @@ main {
 .projectsBody {
     width: auto;
     align-items: center;
-    margin-left: 14rem;
-    margin-right: 12rem;
+    margin-left: 12rem;
+    margin-right: 6rem;
     height: auto;
     margin-bottom: 20rem;
     padding-top: 0;
-    height: 0;
 }
 
 .segment {
@@ -219,10 +223,8 @@ main {
     font-size: 58pt;
     z-index: 4;
     transition: all 0.2s;
-    box-shadow: rgba(189, 197, 209, 0.2) 0px 8px 19.2px 0px;
     border-radius: 8px;
     overflow: hidden;
-    background-color: #fff;
     color: #1e2022;
     z-index: 3;
     line-height: 1.8;
@@ -232,9 +234,8 @@ main {
 }
 
 .segmentLeft {
-    width: 50%;
-    min-width: 40rem;
-    height: 40rem;
+    width: 30rem;
+    height: 30rem;
     color: #000;
     font-weight: bolder;
     z-index: 5;
@@ -243,15 +244,18 @@ main {
 }
 
 .segmentRight {
-    width: 50%;
-    min-width: 40rem;
-    height: 40rem;
+    width: 30rem;
+    height: 30rem;
     color: #000;
     font-weight: bolder;
     z-index: 5;
     transition: all 0.2s;
     position: relative;
-    font-size: 14pt;
+    font-size: 12pt;
+    background-color: #fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: rgba(189, 197, 209, 0.2) 0px 8px 19.2px 0px;
 }
 
 .segmentContainer {
