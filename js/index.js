@@ -1,3 +1,5 @@
+
+
 $( document ).ready(function() {
     console.log("ready!");
 
@@ -62,13 +64,39 @@ $( document ).ready(function() {
 		// generate a five digit number for the contact_number variable
 		this.contact_number.value = Math.random() * 100000 | 0;
 		// these IDs from the previous steps
-		emailjs.sendForm('service_o9hgirl', 'template_tpudjv6', this)
+		emailjs.sendForm('service_hwtx6yl', 'template_tpudjv6', this)
 			.then(function() {
-				console.log('SUCCESS!');
+				$("#submitButton").addClass("green");
 			}, function(error) {
-				console.log('FAILED...', error);
+				$("#submitButton").addClass("red");
 			});
 	});
 
+
+	///////////////////////////////////////////////////
+	//
+	// Word Cloud
+	//
+	const myTags = [
+		'JavaScript', 'CSS', 'HTML',
+		'C', 'C++', 'React',
+		'Python', 'Java', 'git',
+		'django', 'Node.js', 'OpenCV',
+		'GCP', 'MySQL', 'jQuery',
+	];
+	var tagCloud = TagCloud('.skillsCloud', myTags,{
+
+		// radius in px
+		radius: 300,
+	  
+		maxSpeed: 'fast',
+		initSpeed: 'fast',
+	  
+		direction: 135,
+	  
+		// interact with cursor move on mouse out
+		keep: true
+	  
+	  }); 
 
 });

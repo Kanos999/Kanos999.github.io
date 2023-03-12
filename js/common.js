@@ -50,7 +50,7 @@ function windowResized() {
 
 function generateBackground() {
 	var bars = []
-	for(var i = 0; i < 100; i++) {
+	for(var i = 0; i < 200; i++) {
 		bars.push({
 			id: i,
 			w: random(),
