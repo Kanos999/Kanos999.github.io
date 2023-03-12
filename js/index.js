@@ -33,8 +33,8 @@ $( document ).ready(function() {
 		}, 400, 'swing', updateMenuSelection);
 	});
 
-	$(window).scroll(function() {
-		updateMenuSelection();
+	$(window).scroll(() => {
+		throttle(updateMenuSelection(), 800);
 	});
 
 	function updateMenuSelection() {
@@ -44,6 +44,16 @@ $( document ).ready(function() {
 				$(`[section='#${section.id}']`).addClass("selected");
 			}
 		});
+	}
+
+	function throttle(fn, wait) {
+		var time = Date.now();
+		return () => {
+			if ((time + wait - Date.now()) < 0) {
+				fn();
+				time = Date.now();
+			}
+		}
 	}
 
 	emailjs.init('auEZ9YqZNL9QIWVVW');
