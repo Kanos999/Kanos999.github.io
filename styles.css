@@ -198,11 +198,19 @@ form {
 .project {
     background-color: #EEE;
     border-radius: 20px;
-    min-height: 400px;
-    min-width: 400px;
+    min-height: 300px;
+    min-width: 300px;
     margin: 0 40px 40px 0;
     padding: 40px;   
     display: flex;
+    transition: all 0.2s;
+}
+
+.project:hover {
+    min-height: 340px;
+    min-width: 340px;
+    margin: -20px 20px 20px -20px;
+    cursor: pointer;
 }
 
 .projectTitleText {
@@ -323,6 +331,14 @@ main {
     background-image: linear-gradient(
         to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
     ), url('images/asteroids.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-stockman {
+    background-image: linear-gradient(
+        to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
+    ), url('images/stockman.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

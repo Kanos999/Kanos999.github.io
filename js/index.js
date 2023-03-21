@@ -11,13 +11,36 @@ $( document ).ready(function() {
 		typeWriter("#sub2", "// Mechatronics / Computer Science, UNSW", 40);
 	}, 3500);
 
+	let titlesLoaded = {
+
+		about: {
+			loaded: false,
+			text: "About me",
+			selector: "#aboutTitle"
+		},
+		projects: {
+			loaded: false,
+			text: "Projects / Portfolio",
+			selector: "#projectsTitle"
+		},
+		skills: {
+			loaded: false,
+			text: "Skills",
+			selector: "#skillsTitle"
+		},
+		contact: {
+			loaded: false,
+			text: "Get in touch!",
+			selector: "#contactTitle"
+		}
+	}
+
 
 	let sections = $('.section'); //.offset().top;
 
 	let pageScrollIntervals = [];
 
 	for (let i = 0; i < sections.length; i++) {
-		console.log(sections[i].id)
 		pageScrollIntervals.push({
 			id: sections[i].id,
 			offset: $(`#${sections[i].id}`).offset().top
@@ -44,10 +67,20 @@ $( document ).ready(function() {
 			if ( $(window).scrollTop() >= section.offset - 260) {
 				$(".navigationItem").removeClass("selected");
 				$(`[section='#${section.id}']`).addClass("selected");
+
+				if (section.id in titlesLoaded) {
+					if (titlesLoaded[section.id].loaded === false) {
+						console.log(titlesLoaded[section.id].text);
+						titlesLoaded[section.id].loaded = true;
+						typeWriter(titlesLoaded[section.id].selector, titlesLoaded[section.id].text, 80);
+					}
+				}
+				//typeWriter("#landingTitle", "Hi! I'm Kane", 80);
 			}
 		});
 	}
 
+	// Throttling the scroll for better performance
 	function throttle(fn, wait) {
 		var time = Date.now();
 		return () => {
@@ -58,16 +91,27 @@ $( document ).ready(function() {
 		}
 	}
 
+	///////////////////////////////////////////////////
+	//
+	// Email contact
+	//
 	emailjs.init('auEZ9YqZNL9QIWVVW');
 	document.getElementById('contact-form').addEventListener('submit', function(event) {
 		event.preventDefault();
 		// generate a five digit number for the contact_number variable
 		this.contact_number.value = Math.random() * 100000 | 0;
+		if (this.user_name.value == "" || this.user_email == "" || this.message == "") {
+			$("#submitButton").addClass("red");
+			return;
+		}
 		// these IDs from the previous steps
 		emailjs.sendForm('service_hwtx6yl', 'template_tpudjv6', this)
 			.then(function() {
+				$("#submitButton").removeClass("red");
 				$("#submitButton").addClass("green");
+				document.getElementById('contact-form').removeEventListener('submit');
 			}, function(error) {
+				$("#submitButton").removeClass("green");
 				$("#submitButton").addClass("red");
 			});
 	});
@@ -80,17 +124,16 @@ $( document ).ready(function() {
 	const myTags = [
 		'JavaScript', 'CSS', 'HTML',
 		'C', 'C++', 'React',
-		'Python', 'Java', 'git',
-		'django', 'Node.js', 'OpenCV',
-		'GCP', 'MySQL', 'jQuery',
+		'Python', 'git', 'Node.js', 'OpenCV',
+		'MySQL', 'jQuery', 'AngularJS'
 	];
 	var tagCloud = TagCloud('.skillsCloud', myTags,{
 
 		// radius in px
 		radius: 300,
 	  
-		maxSpeed: 'fast',
-		initSpeed: 'fast',
+		maxSpeed: 'mid',
+		initSpeed: 'mid',
 	  
 		direction: 135,
 	  
