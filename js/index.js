@@ -3,6 +3,17 @@
 $( document ).ready(function() {
     console.log("ready!");
 
+	let isMobile = false;
+	if (navigator.userAgent.match(/Android/i)
+         || navigator.userAgent.match(/webOS/i)
+         || navigator.userAgent.match(/iPhone/i)
+         || navigator.userAgent.match(/iPad/i)
+         || navigator.userAgent.match(/iPod/i)
+         || navigator.userAgent.match(/BlackBerry/i)
+         || navigator.userAgent.match(/Windows Phone/i)) {
+            isMobile = true ;
+         }
+
 	typeWriter("#landingTitle", "Hi! I'm Kane", 80);
 	setTimeout(function() {
 		typeWriter("#sub1", "// I like to do stuff and make things", 40);
@@ -12,7 +23,6 @@ $( document ).ready(function() {
 	}, 3500);
 
 	let titlesLoaded = {
-
 		about: {
 			loaded: false,
 			text: "About me",
@@ -127,19 +137,20 @@ $( document ).ready(function() {
 		'Python', 'git', 'Node.js', 'OpenCV',
 		'MySQL', 'jQuery', 'AngularJS'
 	];
-	var tagCloud = TagCloud('.skillsCloud', myTags,{
+	if (!isMobile) {
+		var tagCloud = TagCloud('.skillsCloud', myTags,{
 
-		// radius in px
-		radius: 300,
-	  
-		maxSpeed: 'mid',
-		initSpeed: 'mid',
-	  
-		direction: 135,
-	  
-		// interact with cursor move on mouse out
-		keep: true
-	  
-	  }); 
-
+			// radius in px
+			radius: 300,
+		
+			maxSpeed: 'mid',
+			initSpeed: 'mid',
+		
+			direction: 135,
+		
+			// interact with cursor move on mouse out
+			keep: true
+		
+		}); 
+	}
 });
