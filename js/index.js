@@ -1,7 +1,9 @@
 
 
 $( document ).ready(function() {
-    console.log("ready!");
+	console.log("ready!");
+
+	if (window.location.pathname === "/m") window.location.replace("./mobile/index.html");
 
 	let isMobile = false;
 	if (navigator.userAgent.match(/Android/i)
@@ -12,7 +14,6 @@ $( document ).ready(function() {
          || navigator.userAgent.match(/BlackBerry/i)
          || navigator.userAgent.match(/Windows Phone/i)) {
             isMobile = true ;
-						window.location.replace("./mobile/index.html");
          }
 
 	typeWriter("#landingTitle", "Hi! I'm Kane", 80);
