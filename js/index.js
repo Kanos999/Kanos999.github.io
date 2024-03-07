@@ -1,9 +1,9 @@
-
+if (window.location.pathname === "/m") window.location.replace("./mobile/index.html");
 
 $( document ).ready(function() {
 	console.log("ready!");
 
-	if (window.location.pathname === "/m") window.location.replace("./mobile/index.html");
+	
 
 	let isMobile = false;
 	if (navigator.userAgent.match(/Android/i)
