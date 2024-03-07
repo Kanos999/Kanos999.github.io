@@ -32,6 +32,7 @@ function setup() {
          || navigator.userAgent.match(/BlackBerry/i)
          || navigator.userAgent.match(/Windows Phone/i)) {
             isMobile = true ;
+						window.location.href = "/mobile/index.html"
          }
 }
   
