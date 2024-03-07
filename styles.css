@@ -302,6 +302,22 @@ main {
 }
 
 
+.background-innersteps {
+    background-image: linear-gradient(
+        to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
+    ), url('../images/Innersteps.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-pingpong {
+    background-image: linear-gradient(
+        to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
+    ), url('../images/pingpong.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .background-valet {
     background-image: linear-gradient(
         to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
