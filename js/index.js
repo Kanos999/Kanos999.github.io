@@ -12,6 +12,7 @@ $( document ).ready(function() {
          || navigator.userAgent.match(/BlackBerry/i)
          || navigator.userAgent.match(/Windows Phone/i)) {
             isMobile = true ;
+						window.location.replace("./mobile/index.html");
          }
 
 	typeWriter("#landingTitle", "Hi! I'm Kane", 80);

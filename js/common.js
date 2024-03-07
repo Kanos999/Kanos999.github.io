@@ -32,7 +32,7 @@ function setup() {
          || navigator.userAgent.match(/BlackBerry/i)
          || navigator.userAgent.match(/Windows Phone/i)) {
             isMobile = true ;
-						window.location.replace("../mobile/index.html");
+						
          }
 }
   
