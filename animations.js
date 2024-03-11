@@ -1,7 +1,7 @@
 $(document).ready(function(){
   // Populate the background html dynamically
   let htmlString = "";
-  let chars = "/abcde{}fghijklmnopq[]rstuvwxyz..............." //"@%#*+=-:.   ";
+  let chars = "..//{#(;%)!};..:''" //"@%#*+=-:.   ";
   let height = $("#main").height() / 24,
       width = $("#main").width() / 14,
       res = 50,
