@@ -1,0 +1,79 @@
+@media (max-width: 800px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+
+    body {
+        font-family: monospace;
+        margin: 0;
+        background-color: #EEE;
+    }
+
+    html:not([data-scroll='0']) {    
+        #header {
+            box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
+        }
+    }
+    
+
+    #pageContainer {
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        background: linear-gradient(#F6F6F6, #EEE)
+    }
+
+    .bg-row {
+        line-height: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+    }
+
+    .scanlines:before {
+        background: linear-gradient(hsla(0,16%,17%,0) 50%,rgba(0,0,0,.05) 0),linear-gradient(90deg,rgba(255,0,0,.06),rgba(0,255,0,.02),rgba(0,0,255,.06));
+        background-size: 100% 2px,3px 100%;
+        bottom: 0;
+        content: " ";
+        display: block;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    .contentContainer {
+        margin: 20px;
+    }
+    .contentContainer > div {
+        padding-top: 20px;
+    }
+
+    #header {
+        position: fixed;
+        background-color: #F6F6F6;
+        width: 100%!important;
+        height: auto;
+        top: 0;
+        z-index: 10;
+    }
+
+    .projectsScrollMenu {
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        margin: 0 -20px 0 -20px;
+      }
+
+    #footer {
+        width: 100%!important;
+        padding: 20px 0 20px 0;
+        margin-top: 60px;
+        background-color: rgba(125, 157, 223, 0.2);
+    }
+    #footer > p {
+        margin: 20px;
+    }
+}

@@ -1,97 +1,81 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-
     <head>
-        <title>Kane Jackson - Home</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-        <link href="styles.css" rel="stylesheet" type="text/css"></link>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
-        <script type="text/javascript" src="js/jquery-min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript" src="js/common.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kane Jackson</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width", "initial-scale=1">
+        <link rel="stylesheet" href="desktop.css">
+        <link rel="stylesheet" href="mobile.css">
+        <link rel="stylesheet" href="common.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+        <script src='http://joeiddon.github.io/perlin/perlin.js'></script>
+        <script src="perlin.js"></script>
+        <script src="animations.js"></script>
     </head>
-
     <body>
-        <!-- <div class="header">
-            <a href="https://www.linkedin.com/in/kanejackson2/">LinkedIn</a>
-            <a href="https://github.com/Kanos999">GitHub</a>
+        <!-- <div id="header">
+            <div class="headerBtnContainer">
+                <div class="headerBtn">About me</div>
+                <div class="headerBtn">Projects</div>
+                <div class="headerBtn">Skills</div>
+                <div class="headerBtn">Contact</div>
+            </div>
         </div> -->
+        <div id="pageContainer">
+            <div id="main" class="scanlines"></div>
+        
 
-        <div id="navigationContainer">
-            <div id="navigationItems">
-                <div class="navigationItem" id="menuHome" section="#landingContainer">Home</div>
-                <div class="navigationItem" id="menuAbout" section="#about">About me</div>
-                <div class="navigationItem" id="menuProjects" section="#projects">Projects</div>
-                <div class="navigationItem" id="menuSkills" section="#skills">Skills</div>
-                <div class="navigationItem" id="menuContact" section="#contact">Contact</div>
-            </div>
-        </div>
+            <div class="contentContainer">
+                <div id="about">
+                    <h2>About me</h2>
+                    <p class="bodyText"> 
+                        I am a student at the University of New South Wales, pursuing a dual degree in Mechatronics and Computer Science. 
+                        I am deeply fascinated by the world of coding and robotics, and I love to explore the possibilities of technology 
+                        through innovation and creativity.
+                    </p>
+                    <p class="bodyText"> 
+                        Apart from my academic pursuits, I enjoy playing the piano, reading, playing chess, and snowboarding. Additionally, 
+                        I am captivated by space and the extraordinary accomplishments exhibited in the aerospace industry, and I wish to 
+                        contribute to the space industry in the future.
+                    </p>
+                </div>
 
-        <div class="main">
-            <div class="section" id="landingContainer">
-                <div id="landingTitle"></div><br><!--Hi! I'm <highlight>Kane</highlight><-->
+                <div id="projects">
+                    <h2>Projects</h2>
+                    <div class="projectsScrollMenu">
+                        <div class="project background-innersteps"><p class="projectTitleText"> InnerSteps </p></div>
+                        <div class="project background-valet"><p class="projectTitleText"> Click and Collect Valet </p></div>
+                        <div class="project background-paddles"><p class="projectTitleText"> Paddles </p></div>
+                        <div class="project background-pingpong"><p class="projectTitleText"> Computer Vision </p></div>
+                        <div class="project background-sdd"><p class="projectTitleText"> Project management tool </p></div>
+                        <div class="project background-asteroids"><p class="projectTitleText"> Multiplayer Asteroids </p></div>
+                        <div class="project background-stockman"><p class="projectTitleText"> Stockman </p></div>
+                    </div>
+                </div>
 
-                <div class="subtitle" id="sub1"></div><br>
-                <div class="subtitle" id="sub2"></div>
-            </div>
-
-            <div class="panel section white" id="about">
-                <h1 id="aboutTitle" text="About me">> </h1>
-                I am a student at the University of New South Wales, pursuing a dual degree in Mechatronics and Computer Science. I am deeply fascinated by the world of coding and robotics, and I love to explore the possibilities of technology through innovation and creativity.
-                <p>Apart from my academic pursuits, I enjoy playing the piano, reading, playing chess, and snowboarding. 
-                Additionally, I am captivated by space and the extraordinary accomplishments exhibited in the aerospace industry, and I wish to contribute to the space industry in the future.</p>
-            </div>
-
-            <div class="panel section" id="projects">
-                <h1 id="projectsTitle" text="Projects">> </h1>
-                <div class="projectsContainer">
-                    <div class="project background-innersteps"><p class="projectTitleText"> InnerSteps </p></div>
-                    <div class="project background-valet"><p class="projectTitleText"> Click and Collect Valet </p></div>
-                    <div class="project background-paddles"><p class="projectTitleText"> Paddles </p></div>
-                    <div class="project background-pingpong"><p class="projectTitleText"> Computer Vision </p></div>
-                    <div class="project background-sdd"><p class="projectTitleText"> Project management tool </p></div>
-                    <div class="project background-asteroids"><p class="projectTitleText"> Multiplayer Asteroids </p></div>
-                    <div class="project background-stockman"><p class="projectTitleText"> Stockman </p></div>
+                <div id="contact">
+                    <h2>Get in touch</h2>
+                    <div class="linksContainer">
+                        <a class="link" href="https://www.linkedin.com/in/kanejackson2/"><img src="./images/linkedin.png" height="30" /> <p>Linkedin</p></a>
+                        <a class="link" href="https://github.com/Kanos999"><img src="./images/github.png" height="30" /> <p>Github</p></a>
+                        <a class="link" href="https://www.instagram.com/kane.json/"><img src="./images/instagram.png" height="30" /> <p>Instagram</p></a>
+                    </div>
                 </div>
             </div>
 
-            <div class="panel section" id="skills" style="margin-top: 0;">
-                <h1 id="skillsTitle" text="Skills">> </h1>
-                <div class="skillsContainer">
-                    <p class="skillsText">
-                        I'll keep this brief - I possess a range of professional skills that enable me to solve problems effectively. 
-                        I excel at collaborating with other members of a development team and am 
-                        an effective communicator. I keep myself updated with the latest trends and technologies in the field, and am
-                        quick to learn new frameworks and technologies that pique my interest. 
-                        </p>
-                    <span class="skillsCloud"></span>
-                </div>
+            <div id="footer" class="footer">
+                <p>Mobile site made with &lt;3 by <a href="https://github.com/Kanos999">@Kanos999</a></p>
             </div>
-
-            <div class="panel section white" id="contact">
-                <h1 id="contactTitle" text="Get in touch!">> </h1>
-                <div class="contactContainer">
-                    <form id="contact-form">
-                        <input type="hidden" name="contact_number" class="textInput">
-                        <label>Name</label>
-                        <input type="text" name="user_name" class="textInput">
-                        <label>Email</label>
-                        <input type="email" name="user_email" class="textInput">
-                        <label>Message</label>
-                        <textarea name="message" class="textInput"></textarea>
-                        <input type="submit" value="Send" id="submitButton">
-                    </form>
-                    <div class="divider">OR</div>
-                    <div id="socials"></div>
-                </div>
-            </div>
-
-            <div id="footer"></div>
         </div>
     </body>
 </html>
