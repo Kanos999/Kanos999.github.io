@@ -15,6 +15,7 @@
   text-align: center;
   /* border: solid 1px #CCC; */
   box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
+  user-select: none;
 }
 
 .blur {
@@ -41,17 +42,12 @@
   transition: all 0.1s;
 }
 
-.landingText:hover {
-  /* color: #226ed1!important; */
-  cursor: pointer;
-  border: solid 1px #023c88;
-}
-
 #pageTitle {
   color: #FFF!important;
   text-align: left!important;
   position: absolute;
   bottom: 40px;
+  font-weight: bold;
 }
 
 .bodyText {
@@ -126,6 +122,13 @@
   background-size: cover;
 }
 
+.background-inxby {
+  background-image: linear-gradient(
+      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.9)
+  ), url('./images/inxby.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .background-sdd {
   background-image: linear-gradient(
