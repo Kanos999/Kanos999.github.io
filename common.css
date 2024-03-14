@@ -1,7 +1,7 @@
 
 #main {
   background-color: #040404;
-  filter: blur(0.5px);
+  filter: blur(0);
   border-radius: 40px;
   width: auto;
   height: 36rem;
@@ -15,6 +15,10 @@
   text-align: center;
   /* border: solid 1px #CCC; */
   box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
+}
+
+.blur {
+  filter: blur(0.5px)!important;
 }
 
 #landingText {
@@ -43,9 +47,34 @@
   border: solid 1px #023c88;
 }
 
+#pageTitle {
+  color: #FFF!important;
+  text-align: left!important;
+  position: absolute;
+  bottom: 40px;
+}
+
 .bodyText {
   font-size: large;
   line-height: 2;
+}
+
+.quote {
+  border-left: solid 2px #CCC;
+  padding-left: 20px;
+}
+
+.viewProjectButton {
+  border-radius: 100px;
+  padding: 14px;
+  height: 30px;
+  font-size: 14pt;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 12px;
+  text-decoration: none;
+  background-color: rgba(125, 157, 223, 0.2);
 }
 
 .project {
@@ -67,7 +96,7 @@
 
 .background-innersteps {
   background-image: linear-gradient(
-      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
+      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.9)
   ), url('./images/Innersteps.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,7 +104,7 @@
 
 .background-pingpong {
   background-image: linear-gradient(
-      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
+      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.9)
   ), url('./images/pingpong.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,7 +112,7 @@
 
 .background-valet {
   background-image: linear-gradient(
-      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
+      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.9)
   ), url('./images/clicks.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,7 +120,7 @@
 
 .background-paddles {
   background-image: linear-gradient(
-      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
+      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.9)
   ), url('./images/paddles.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,7 +129,7 @@
 
 .background-sdd {
   background-image: linear-gradient(
-      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
+      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.9)
   ), url('./images/sdd.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,7 +137,7 @@
 
 .background-asteroids {
   background-image: linear-gradient(
-      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
+      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.9)
   ), url('./images/asteroids.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,7 +145,7 @@
 
 .background-stockman {
   background-image: linear-gradient(
-      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)
+      to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.9)
   ), url('./images/stockman.jpg');
   background-repeat: no-repeat;
   background-size: cover;

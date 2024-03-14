@@ -76,6 +76,4 @@ $(document).ready(function(){
     height = $("#main").height() / 24;
     width = $("#main").width() / 14;
   });
-
-
 });
