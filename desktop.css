@@ -16,6 +16,7 @@
         width: 100vw;
         height: 100vh;
         position: absolute;
+        background-color: #040404;
     }
 
     .bg-row {
@@ -46,9 +47,10 @@
 
     .contentContainer {
         margin-top: 500px;
-        max-width: 60%;
+        max-width: 80%;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 200px;
         /* box-shadow: 0 0 80px 80px #f6f6f6; */
     }
     .contentContainer > div {
@@ -74,7 +76,6 @@
     #footer {
         width: 60%!important;
         padding: 20px 20% 20px 20%;
-        margin-top: 60px;
         background-color: rgba(125, 157, 223, 0.2);
     }
     #footer > p {

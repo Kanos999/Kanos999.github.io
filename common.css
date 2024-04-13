@@ -4,7 +4,6 @@
   filter: blur(0);
   /* width: auto;  */
   width: 100vw; 
-  height: 100vh;
   /* height: 36rem; */
   margin: 0;
   overflow: hidden;
@@ -185,15 +184,15 @@
 
 .parallax {
   perspective: 1px;
-  height: 100vh;
+  height: 200vh;
   overflow-x: hidden;
   overflow-y: auto;
+  perspective-origin: top;
 }
 .parallax__layer {
   position: absolute;
-  top: 0;
+  top: 0!important;
   right: 0;
-  bottom: 0;
   left: 0;
 }
 .foreground {
@@ -201,10 +200,16 @@
 }
 .background {
   transform: translateZ(-1px) scale(2);
+  transform-origin: center top;
 }
 
 .panel {
-  background-color: #F6F6F6DA;
-  padding: 12px;
+  background-color: #F6F6F6;
+  border: solid 2px rgba(125, 157, 223, 0.4);
+  padding: 32px;
   border-radius: 12px;
+}
+
+h2 {
+  font-size: xx-large;
 }

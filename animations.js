@@ -2,12 +2,13 @@ $(document).ready(function(){
   // Populate the background html dynamically
   let htmlString = "";
   let chars = "..//{#(;%)!};..:''" //"@%#*+=-:.   ";
-  let height = $("#main").height() / 27,
+  let height = $(".contentContainer").height() + 200,
       width = $("#main").width() / 14,
       res = 50,
       frame = 0,
       fps = 10;
 
+  $("#main").height(height);
 
   for (let i = 0; i < height; i++) {
     htmlString += `<p id="bg-row-${i}" class="bg-row"></p>`;
@@ -17,9 +18,15 @@ $(document).ready(function(){
 
   noise.seed(Math.random());
 
+  $( window ).on( "resize", function() {
+    height = $(".contentContainer").height() + 200;
+    width = $("#main").width() / 14
+    $("#main").height(height);
+  } );
+
   // Generate the 2d array of characters
   const interval = setInterval(() => {
-    for (var i = 0; i < height; i++) {
+    for (var i = 0; i < height / 27; i++) {
       let row = [];
       for (var j = 0; j < width; j++) {
         // All noise functions return values in the range of -1 to 1.
@@ -65,12 +72,6 @@ $(document).ready(function(){
 
       $(`#bg-row-${i}`).html(row);
     }
-    console.log(height);
     frame++;
   }, 1000 / fps)
-
-  $( window ).on("resize", () => {
-    height = $("#main").height() / 24;
-    width = $("#main").width() / 14;
-  });
 });
