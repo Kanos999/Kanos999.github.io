@@ -35,17 +35,13 @@ $(document).ready(function(){
           textLength: 12
         },
         {
-          htmlTag: "<a href='#about' class='landingText'>> ABOUT ME</a>",
-          textLength: 10
+          htmlTag: "<b class='landingText'>I like to do stuff and make things</b>",
+          textLength: 34
         },
         {
-          htmlTag: "<a href='#projects' class='landingText'>> PROJECTS</a>",
-          textLength: 10
-        },
-        {
-          htmlTag: "<a href='#contact' class='landingText'>> CONTACT</a>",
-          textLength: 9
-        },
+          htmlTag: "<b class='landingText'>Mechatronics / Computer Science, UNSW</b>",
+          textLength: 37
+        }
       ]
 
       if (i === 5) {
@@ -60,11 +56,12 @@ $(document).ready(function(){
         row = row.slice(0, Math.floor(width/2 - manualTexts[2].textLength/2)) 
             + manualTexts[2].htmlTag 
             + row.slice(Math.floor(width/2 + manualTexts[2].textLength/2), width-1);
-      } else if (i === 14) {
-        row = row.slice(0, Math.floor(width/2 - manualTexts[3].textLength/2)) 
-            + manualTexts[3].htmlTag 
-            + row.slice(Math.floor(width/2 + manualTexts[3].textLength/2), width-1);
       }
+      // } else if (i === 14) {
+      //   row = row.slice(0, Math.floor(width/2 - manualTexts[3].textLength/2)) 
+      //       + manualTexts[3].htmlTag 
+      //       + row.slice(Math.floor(width/2 + manualTexts[3].textLength/2), width-1);
+      // }
 
       $(`#bg-row-${i}`).html(row);
     }
