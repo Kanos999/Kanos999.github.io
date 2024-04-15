@@ -1,5 +1,5 @@
 
-#main {
+#ocean {
   background-color: #040404;
   filter: blur(0);
   /* width: auto;  */
@@ -166,7 +166,7 @@
   display: block;
   margin-bottom: 12px;
   text-decoration: none;
-  background-color: rgba(125, 157, 223, 0.2);
+  background-color: rgba(125, 157, 223, 0.8);
 }
 .link p {
   margin-top: -26px;
