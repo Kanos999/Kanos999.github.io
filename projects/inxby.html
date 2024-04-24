@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width", "initial-scale=1">
         <link rel="icon" type="image/x-icon" href="../favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../desktop.css">
         <link rel="stylesheet" href="../mobile.css">
         <link rel="stylesheet" href="../common.css">
@@ -30,50 +31,50 @@
                 <div class="headerBtn">Contact</div>
             </div>
         </div> -->
-        <div id="pageContainer">
-            <div id="main" class="background-inxby">
-                <div id="pageTitle" text="Inxby"></div>
+
+        <div id="pageContainer" class="parallax">
+            <div class="parallax__layer background">
+                <div id="landingImage" class="background-inxby"></div>
             </div>
+        
 
-
-            <div class="contentContainer">
-                <a class="viewProjectButton" href="https://inxby.vercel.app/">See for yourself</a>
-                <div id="problem">
-                    <h2>The Problem</h2>
-                    <p class="bodyText"> 
-                        A procedure I noticed at a tech retail store was an outdated stock logging system; 
-                        All high-risk stock (stored in either the stockroom, locked offices or stock cages)
-                        was required to be signed out on a clipboard hanging at each location. The item SKU,
-                        serial/IMEI, date, time, and team member name had to be recorded with pen on paper.
-                        This method was inefficient, and meant longer wait times for customers which affected 
-                        their shopping experience in store. 
-                    </p>
+            <div class="parallax__layer foreground">
+                <div class="contentContainer contentMargin panel">
+                    <div id="pageTitle" text="Inxby"></div>
+                    <a class="viewProjectButton" href="https://inxby.vercel.app/">See for yourself</a>
+                    <div id="problem">
+                        <h2>The Problem</h2>
+                        <p class="bodyText"> 
+                            A lot of consumers own printers, and not many know the specifications of their printers.
+                            Specifically, the inkk cartridges their printer takes. The easiest way of finding out
+                            which cartridge is right is to check the ones already in the printer. However, most consumers
+                            don't do this before blindly entering a store to buy new ones. 
+                        </p>
+                    </div>
+    
+                    <div id="problem">
+                        <h2>The Solution</h2>
+                        <p class="bodyText"> 
+                            A simple website where a user can enter the make and model of their printer, returning the 
+                            cartridge(s) that their printer takes. This saves them a few minutes of Googling, sure, but
+                            the real use is for retail employees. With the website saved to store-owned PDTs, workers can
+                            find the cartridges for customers with ease. 
+                        </p>
+                    </div>
+    
+                    <div id="technologies">
+                        <h2>Technologies Used</h2>
+                        <p class="bodyText"> 
+                            ReactJS, MaterialUI, Vercel.
+                        </p>
+                    </div>
                 </div>
-
-                <div id="problem">
-                    <h2>The Solution</h2>
-                    <p class="bodyText"> 
-                        A stock management/logging system that could be used on the store's PDTs, 
-                        wherein the team members could utilise the scanner on the device to record the product
-                        barcode and serial/IMEI, through which it would scrape the company website to obtain
-                        the product's SKU, and automatically log the time, date, and team member retrieving 
-                        the product. With this data, stores can easily track movements of stock in and out of 
-                        their secured locations and generate reports in the same format that had been used
-                        previously.
-                    </p>
+    
+                <div id="footer" class="footer">
+                    <p>Made with &lt;3 by <a href="https://github.com/Kanos999">@Kanos999</a></p>
                 </div>
-
-                <div id="technologies">
-                    <h2>Technologies Used</h2>
-                    <p class="bodyText"> 
-                        ReactJS, Node.js, MongoDB (or was it postgreSQL)
-                    </p>
-                </div>
-            </div>
-
-            <div id="footer" class="footer">
-                <p>Made with &lt;3 by <a href="https://github.com/Kanos999">@Kanos999</a></p>
             </div>
         </div>
+
     </body>
 </html>

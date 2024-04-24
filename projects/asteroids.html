@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width", "initial-scale=1">
         <link rel="icon" type="image/x-icon" href="../favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../desktop.css">
         <link rel="stylesheet" href="../mobile.css">
         <link rel="stylesheet" href="../common.css">
@@ -30,35 +31,38 @@
                 <div class="headerBtn">Contact</div>
             </div>
         </div> -->
-        <div id="pageContainer">
-            <div id="main" class="background-asteroids">
-                <div id="pageTitle" text="Multiplayer Asteroids"></div>
+        <div id="pageContainer" class="parallax">
+            <div class="parallax__layer background">
+                <div id="landingImage" class="background-asteroids"></div>
             </div>
+        
 
+            <div class="parallax__layer foreground">
+                <div class="contentContainer contentMargin panel">
+                    <div id="pageTitle" text="Multiplayer Asteroids"></div>
+                    <a class="viewProjectButton" href="">See for yourself</a>
+                    <div id="problem">
+                        <h2>A classic game, reimagined</h2>
+                        <p class="bodyText"> 
+                            Those familiar with the popular Atari game from 1979 will know the fundamental machanics of Asteroids.
+                            The player controls a single spaceship in an asteroid field, avoiding collisions and shooting objects to
+                            earn points. This modern version implements a lot of those same mechanics, with the addition of multiplayer
+                            functionality. This introduces a whole new set of obstacles and things to shoot, and enhances the competitive 
+                            nature of the game. 
+                        </p>
+                    </div>
 
-            <div class="contentContainer">
-                <a class="viewProjectButton" href="">See for yourself</a>
-                <div id="problem">
-                    <h2>A classic game, reimagined</h2>
-                    <p class="bodyText"> 
-                        Those familiar with the popular Atari game from 1979 will know the fundamental machanics of Asteroids.
-                        The player controls a single spaceship in an asteroid field, avoiding collisions and shooting objects to
-                        earn points. This modern version implements a lot of those same mechanics, with the addition of multiplayer
-                        functionality. This introduces a whole new set of obstacles and things to shoot, and enhances the competitive 
-                        nature of the game. 
-                    </p>
+                    <div id="technologies">
+                        <h2>Technologies Used</h2>
+                        <p class="bodyText"> 
+                            p5.js, socket.io, node.js
+                        </p>
+                    </div>
                 </div>
-
-                <div id="technologies">
-                    <h2>Technologies Used</h2>
-                    <p class="bodyText"> 
-                        p5.js, socket.io, node.js
-                    </p>
+    
+                <div id="footer" class="footer">
+                    <p>Made with &lt;3 by <a href="https://github.com/Kanos999">@Kanos999</a></p>
                 </div>
-            </div>
-
-            <div id="footer" class="footer">
-                <p>Made with &lt;3 by <a href="https://github.com/Kanos999">@Kanos999</a></p>
             </div>
         </div>
     </body>

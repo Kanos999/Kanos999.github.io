@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width", "initial-scale=1">
         <link rel="icon" type="image/x-icon" href="../favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../desktop.css">
         <link rel="stylesheet" href="../mobile.css">
         <link rel="stylesheet" href="../common.css">
@@ -30,59 +31,62 @@
                 <div class="headerBtn">Contact</div>
             </div>
         </div> -->
-        <div id="pageContainer">
-            <div id="main" class="background-valet">
-                <div id="pageTitle" text="Click & Collect Valet"></div>
+        <div id="pageContainer" class="parallax">
+            <div class="parallax__layer background">
+                <div id="landingImage" class="background-valet"></div>
             </div>
+        
 
-
-            <div class="contentContainer">
-                <a class="viewProjectButton" href="https://click-collection.web.app/">&#128064; See for yourself (Store #: 204)</a>
-                <div id="problem">
-                    <h2>The Problem</h2>
-                    <p class="bodyText"> 
-                        Throughout covid lockdowns, the retail store I worked at closed its doors for in-store shopping, 
-                        relying solely on online click and collect orders. While this allowed us to still continue business,
-                        it introduced a bottleneck in our daily procedures. When a customer came to the door, an attendant
-                        would be there to take their order number, and relay it to another team member who would retrieve the 
-                        order from the receiving dock. Often this communication would be announced over store headsets, which 
-                        would cause a lot of radio clutter and confusion, especially if there were multiple customers awaiting
-                        their orders.
-                    </p>
-                    <div class="quote">
-                        <p class="bodyText" style="font-style: italic;">"Can I get a click and collect for Smith? Order number 123456."</p>
-                        <p class="bodyText" style="font-style: italic;">"Click and collect for Davis. Last digits are 6789."</p>
-                        <p class="bodyText" style="font-style: italic; text-align: right;">"Wait, can you repeat the first order?"</p>
-                        <p class="bodyText" style="font-style: italic;">"Sorry -- that was Smith, order number 123456."</p>
-                        <p class="bodyText" style="font-style: italic; text-align: right;">"Okay, both are on their way."</p>
+            <div class="parallax__layer foreground">
+                <div class="contentContainer contentMargin panel">
+                    <div id="pageTitle" text="Click & Collect Valet"></div>
+                    <a class="viewProjectButton" href="https://click-collection.web.app/">&#128064; See for yourself (Store #: 204)</a>
+                    <div id="problem">
+                        <h2>The Problem</h2>
+                        <p class="bodyText"> 
+                            Throughout covid lockdowns, the retail store I worked at closed its doors for in-store shopping, 
+                            relying solely on online click and collect orders. While this allowed us to still continue business,
+                            it introduced a bottleneck in our daily procedures. When a customer came to the door, an attendant
+                            would be there to take their order number, and relay it to another team member who would retrieve the 
+                            order from the receiving dock. Often this communication would be announced over store headsets, which 
+                            would cause a lot of radio clutter and confusion, especially if there were multiple customers awaiting
+                            their orders.
+                        </p>
+                        <div class="quote">
+                            <p class="bodyText" style="font-style: italic;">"Can I get a click and collect for Smith? Order number 123456."</p>
+                            <p class="bodyText" style="font-style: italic;">"Click and collect for Davis. Last digits are 6789."</p>
+                            <p class="bodyText" style="font-style: italic; text-align: right;">"Wait, can you repeat the first order?"</p>
+                            <p class="bodyText" style="font-style: italic;">"Sorry -- that was Smith, order number 123456."</p>
+                            <p class="bodyText" style="font-style: italic; text-align: right;">"Okay, both are on their way."</p>
+                        </div>
+                        <p class="bodyText"> 
+                            This was a nightmare. It was inefficient and forced customers to have to wait longer for their orders.
+                            It was clear a software solution could improve this procedure drastically.
+                        </p>
                     </div>
-                    <p class="bodyText"> 
-                        This was a nightmare. It was inefficient and forced customers to have to wait longer for their orders.
-                        It was clear a software solution could improve this procedure drastically.
-                    </p>
-                </div>
 
-                <div id="problem">
-                    <h2>The Solution</h2>
-                    <p class="bodyText"> 
-                        After a weekend of coding, the store had a functional web-app to run on the store-use iPad and iPods
-                        to allow fetching customer orders much faster, without the radio clutter. The front door attendant
-                        would input the customer name or order into their client and all other team members in the store
-                        could see the incoming valet requests and fulfill them with ease. Additionally, the system was usable
-                        by multiple stores without interference.
-                    </p>
-                </div>
+                    <div id="problem">
+                        <h2>The Solution</h2>
+                        <p class="bodyText"> 
+                            After a weekend of coding, the store had a functional web-app to run on the store-use iPad and iPods
+                            to allow fetching customer orders much faster, without the radio clutter. The front door attendant
+                            would input the customer name or order into their client and all other team members in the store
+                            could see the incoming valet requests and fulfill them with ease. Additionally, the system was usable
+                            by multiple stores without interference.
+                        </p>
+                    </div>
 
-                <div id="technologies">
-                    <h2>Technologies Used</h2>
-                    <p class="bodyText"> 
-                        Bootstrap, Firebase Realtime Database, jQuery.
-                    </p>
+                    <div id="technologies">
+                        <h2>Technologies Used</h2>
+                        <p class="bodyText"> 
+                            Bootstrap, Firebase Realtime Database, jQuery.
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <div id="footer" class="footer">
-                <p>Made with &lt;3 by <a href="https://github.com/Kanos999">@Kanos999</a></p>
+    
+                <div id="footer" class="footer">
+                    <p>Made with &lt;3 by <a href="https://github.com/Kanos999">@Kanos999</a></p>
+                </div>
             </div>
         </div>
     </body>
