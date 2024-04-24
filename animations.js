@@ -46,8 +46,8 @@ $(document).ready(function(){
           textLength: 17
         },
         {
-          htmlTag: "<b class='landingText'>Mechatronics Engineering /</b>",
-          textLength: 26
+          htmlTag: "<b class='landingText'>Mechatronics Eng /</b>",
+          textLength: 18
         },
         {
           htmlTag: "<b class='landingText'>Computer Science, UNSW</b>",
