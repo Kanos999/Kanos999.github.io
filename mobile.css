@@ -46,12 +46,16 @@
     #pageTitle {
         padding-left: 10px;
         font-size: 20pt;
-        top: 25rem;
+        top: 9rem;
+    }
+
+    #landingImage {
+        height: 14rem;
     }
 
     .contentContainer {
         font-family: 'Poppins', sans-serif;
-        margin-top: 500px;
+        margin-top: 36rem;
         width: 100vw;
         margin-left: auto;
         margin-right: auto;
@@ -61,6 +65,19 @@
         padding-top: 20px;
     }
     .contentMargin {
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: auto;
+    }
+
+    .projectContent {
+        font-family: 'Poppins', sans-serif;
+        margin-top: 14rem;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 200px;
         padding-top: 40px;
         padding-left: 30px;
         padding-right: 30px;
