@@ -94,11 +94,19 @@
         margin-right: auto;
     }
 
+    .enlargeBG {
+        transition: all 0.2s;
+      }
+      
+    .enlargeBG:hover {
+    margin: -0.8em;
+    }
+
     .projectsScrollMenu {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 1fr auto;
-        column-gap: 0.72em;
+        gap: 2em;
     }
 
     .row-auto {
@@ -106,10 +114,8 @@
     }
 
     #footer {
-        padding: 20px 20% 20px 20%;
+        padding: 40px 10% 40px 10%;
         background-color: rgba(125, 157, 223, 1);
     }
-    #footer > p {
-        margin: 20px;
-    }
+    
 }
