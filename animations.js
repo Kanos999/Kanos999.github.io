@@ -10,7 +10,7 @@ $(document).ready(function(){
 
   $("#ocean").height(height);
 
-  for (let i = 0; i < height; i++) {
+  for (let i = 0; i < height / 27; i++) {
     htmlString += `<p id="bg-row-${i}" class="bg-row"></p>`;
   }
 
